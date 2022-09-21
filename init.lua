@@ -21,6 +21,14 @@ minetest.register_node("girder:girder_side", {
     _sound_def = {
 		key = "node_sound_metal_defaults",
 	},
+    selection_box = {
+        type = "fixed",
+        fixed = {-0.5, -0.5, -0.5, 0.5, 0.5, -0.5+2/16},
+    },
+    collision_box = {
+        type = "fixed",
+        fixed = {-0.5, -0.5, -0.5, 0.5, 0.5, -0.5+2/16},
+    },
 })
 minetest.register_node("girder:plate", {
     description = "beam",
@@ -33,4 +41,12 @@ minetest.register_node("girder:plate", {
     _sound_def = {
 		key = "node_sound_metal_defaults",
 	},
+    selection_box = {
+        type = "fixed",
+        fixed = {-0.5, -0.5, -0.5, 0.5, -0.5+1/16, 0.5},
+    },
+    collision_box = {
+        type = "fixed",
+        fixed = {-0.5, -0.5, -0.5, 0.5, -0.5+1/16, 0.5},
+    },
 })
