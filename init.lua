@@ -7,9 +7,7 @@ minetest.register_node("girder:beam", {
     tiles = {"[combine:16x16^[noalpha^[colorize:grey"},
     groups={oddly_breakable_by_hand=3},
     is_ground_content = false,
-    _sound_def = {
-        key = "node_sound_metal_defaults",
-    },
+    sounds = xcompat.sounds.node_sound_metal_defaults(),
 })
 minetest.register_node("girder:girder_side", {
     description = "beam",
@@ -20,9 +18,7 @@ minetest.register_node("girder:girder_side", {
     tiles = {"[combine:16x16^[noalpha^[colorize:grey"},
     groups={oddly_breakable_by_hand=3},
     is_ground_content = false,
-    _sound_def = {
-        key = "node_sound_metal_defaults",
-    },
+    sounds = xcompat.sounds.node_sound_metal_defaults(),
     selection_box = {
         type = "fixed",
         fixed = {-0.5, -0.5, -0.5, 0.5, 0.5, -0.5+2/16},
@@ -41,9 +37,7 @@ minetest.register_node("girder:plate", {
     tiles = {"[combine:16x16^[noalpha^[colorize:grey"},
     groups={oddly_breakable_by_hand=3},
     is_ground_content = false,
-    _sound_def = {
-        key = "node_sound_metal_defaults",
-    },
+    sounds = xcompat.sounds.node_sound_metal_defaults(),
     selection_box = {
         type = "fixed",
         fixed = {-0.5, -0.5, -0.5, 0.5, -0.5+1/16, 0.5},
